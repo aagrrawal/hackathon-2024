@@ -1,0 +1,22 @@
+spec {
+    container {
+      name  = "example-container"
+      image = "nginx"
+
+      dynamic "volume_mount" {
+        for_each = var.enable_volume_mount ? [1] : []
+        content {
+          name      = "example-volume"
+          mount_path = "/data"
+        }
+      }
+    }
+
+    dynamic "volume" {
+      for_each = var.enable_volume_mount ? [1] : []
+      content {
+        name = "example-volume"
+        empty_dir {}
+      }
+    }
+  }
