@@ -1,0 +1,203 @@
+[
+    {
+        "environment": "core",
+        "key": "metricsEnabled",
+        "service": "kafka-collector",
+        "type": "dynconfigVariable",
+        "value": [
+            "true"
+        ],
+        "default": [
+            "false"
+        ]
+    },
+    {
+        "key": "test",
+        "service": "kafka-collector",
+        "type": "dynconfigVariable",
+        "value": [
+            "test"
+        ],
+        "default": [
+            "test"
+        ]
+    },
+    {
+        "key": "circuitBreakerDropPercentage",
+        "service": "kafka-collector",
+        "type": "dynconfigVariable",
+        "value": [
+            "95.0"
+        ],
+        "default": [
+            "95.0"
+        ]
+    },
+    {
+        "environment": "core",
+        "key": "circuitBreakerEnabled",
+        "service": "kafka-collector",
+        "type": "dynconfigVariable",
+        "value": [
+            "true"
+        ],
+        "default": [
+            "false"
+        ]
+    },
+    {
+        "environment": "core",
+        "key": "restartRequiredIntervalSeconds",
+        "service": "kafka-collector",
+        "type": "dynconfigVariable",
+        "value": [
+            "0"
+        ],
+        "default": [
+            "86400"
+        ]
+    },
+    {
+        "key": "ingestEventsTopic",
+        "service": "kafka-collector",
+        "type": "dynconfigVariable",
+        "value": [
+            "true"
+        ],
+        "default": [
+            "true"
+        ]
+    },
+    {
+        "key": "circuitBreakerTimeWindowSeconds",
+        "service": "kafka-collector",
+        "type": "dynconfigVariable",
+        "value": [
+            "86400"
+        ],
+        "default": [
+            "86400"
+        ]
+    },
+    {
+        "environment": "core",
+        "key": "autoOffsetReset",
+        "service": "kafka-collector",
+        "type": "dynconfigVariable",
+        "value": [
+            "latest"
+        ],
+        "default": [
+            "latest"
+        ]
+    },
+    {
+        "environment": "core",
+        "key": "metricsHECBaseURL",
+        "service": "kafka-collector",
+        "type": "dynconfigVariable",
+        "value": [
+            "https://splunk-hec.oip1.tivo.com:8088"
+        ]
+    },
+    {
+        "environment": "core",
+        "key": "metricsHECToken",
+        "service": "kafka-collector",
+        "type": "dynconfigVariable",
+        "value": [
+            "83AB9561-7567-4BED-97AD-A3C189102A76"
+        ]
+    },
+    {
+        "environment": "core",
+        "key": "circuitBreakerRules",
+        "service": "kafka-collector",
+        "type": "dynconfigVariable",
+        "value": [
+            "events:*:*:dynconfig:95",
+            "events:*:*:monitoring-rest-server:95",
+            "events:*:*:token:95",
+            "events:*:*:bs35:50",
+            "events:*:*:mirror:60",
+            "events:*:*:sessionmgr:50",
+            "events:*:*:station-group-resolver:50",
+            "events:*:*:drm-house-keeper:50",
+            "debug:*:udf-dev:udf-danube-transformer:0"
+        ]
+    },
+    {
+        "key": "circuitBreakerThresholdBytes",
+        "service": "kafka-collector",
+        "type": "dynconfigVariable",
+        "value": [
+            "5368709120"
+        ],
+        "default": [
+            "5368709120"
+        ]
+    },
+    {
+        "environment": "core",
+        "key": "HECBaseURL",
+        "service": "kafka-collector",
+        "type": "dynconfigVariable",
+        "value": [
+            "https://splunk-hec.oip1.tivo.com:8088"
+        ]
+    },
+    {
+        "environment": "core",
+        "key": "kafkaEventsThreads",
+        "service": "kafka-collector",
+        "type": "dynconfigVariable",
+        "value": [
+            "2"
+        ],
+        "default": [
+            "2"
+        ]
+    },
+    {
+        "environment": "core",
+        "key": "HECToken",
+        "service": "kafka-collector",
+        "type": "dynconfigVariable",
+        "value": [
+            "F7C8D601-79A1-4C76-BEF5-0AAA884204BF"
+        ]
+    },
+    {
+        "key": "circuitBreakerTimeWindowBuckets",
+        "service": "kafka-collector",
+        "type": "dynconfigVariable",
+        "value": [
+            "24"
+        ],
+        "default": [
+            "24"
+        ]
+    },
+    {
+        "environment": "core",
+        "key": "debugTopicPatterns",
+        "service": "kafka-collector",
+        "type": "dynconfigVariable",
+        "value": [
+            "debug\\.udf-dev\\.udf-danube-resolver",
+            "debug\\.udf-dev\\.udf-danube-transformer",
+            "debug\\.udf-dev\\.udf-danube-trowel"
+        ]
+    },
+    {
+        "key": "circuitBreakerTimeWindowPartitions",
+        "service": "kafka-collector",
+        "type": "dynconfigVariable",
+        "value": [
+            "10"
+        ],
+        "default": [
+            "10"
+        ]
+    }
+]

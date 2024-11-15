@@ -19,11 +19,19 @@ variable "app_version" {
 
 variable "owner_email" {
   description = "The email address of the deployment owner"
-  default = "inception-scrum@tivo.com"
 }
 
 variable "user" {
   description = "The username running the ephemeral deployment"
+}
+
+variable "replicas" {
+  description = "Max and Min replicas for HPA."
+  type = map(number)
+  default = {
+    "min"  = 2
+    "max"  = 3
+  }
 }
 
 variable "slack_alert_channel" {

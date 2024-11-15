@@ -1,3 +1,3 @@
-## Echo
+## kafka-collector
 
-A sample ephemeral deployment of a cluster of 3 echo containers in an ephemeral namespace
+A sample ephemeral deployment of a cluster of kafka-collector containers in an ephemeral namespace

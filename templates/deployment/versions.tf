@@ -10,8 +10,8 @@ terraform {
     }
     slack = {
       source  = "terraform.tivo.com/pablovarela/slack"
-      version = "= 1.2.0-tivo.2"
+      version = "= 1.2.0"
     }
   }
-  required_version = "~> 1.3"
+  required_version = "~> 1.4"
 }
